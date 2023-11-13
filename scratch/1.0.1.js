@@ -24,7 +24,7 @@ var fullscreen = navigator.standalone ||
     window.matchMedia('(max-device-width: 800px) and (max-device-height: 800px)').matches;
 
 window.onload = function() {
-    var url = "https://freudenbergs.de/vanessa/squeakjs/scratch/Scratch.image";
+    var url = "Scratch1.0.1.image";
     SqueakJS.runSqueak(url, sqCanvas, {
         appName: "Scratch",
         fullscreen: fullscreen,
@@ -32,7 +32,7 @@ window.onload = function() {
         footer: sqFooter,
         spinner: sqSpinner,
         fullscreenCheckbox: sqFullscreen,
-        root: "/Scratch",
+        root: "/Scratchy",
         templates: ["Projects", "Media", "Help", "locale"],
     });
 };
